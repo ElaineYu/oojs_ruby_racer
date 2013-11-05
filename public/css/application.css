@@ -1,0 +1,35 @@
+.container {
+  margin: 20px auto;
+  width: 1200px;
+  padding: 0px 20px 20px 20px;
+  border: 1px dotted black;
+}
+th {
+  text-align: left;
+}
+
+.racer_table td {
+  border-bottom-style: solid;
+  border-top-style: solid;
+  border-width: 2px;
+  background-color: white;
+  height: 27px;
+  width: 50px;
+  font-size: 12px;
+}
+
+.racer_table #player1_strip  td.active {
+  background-image: url('/pink-car.png');
+  background-repeat: no-repeat;
+}
+
+.racer_table #player2_strip  td.active {
+  background-image: url('/blue-car.png');
+  background-repeat: no-repeat;
+}
+
+#win {
+  font-size: 24px;
+  color: orange;
+  height: 30px;
+}

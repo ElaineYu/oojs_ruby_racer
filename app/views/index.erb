@@ -1,0 +1,63 @@
+<div class="container">
+  <h1>Welcome to Javascript Racer!</h1>
+  <p>Gentlemen, start your engines!</p>
+  <!-- Get player names -->
+  <form action='/create_players' method="POST">
+    <label> Player 1 <input type="text" name="player_1" ></label><br>
+    <label> Player 2 <input type="text" name="player_2" ></label><br>
+    <input type="submit" value="Enter Names to Play!">
+  </form>
+  <br>
+
+  <div id="win"></div>
+<table class="racer_table">
+  <tr id="player1_strip">
+    <td>Racer 1</td>
+    <td class="active"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr id="player2_strip">
+    <td>Racer 2</td>
+    <td class="active"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+<br><br>
+  <input id="reset_button" type="button" value="New Race">
+</div>
