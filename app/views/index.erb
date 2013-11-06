@@ -1,17 +1,30 @@
 <div class="container">
   <h1>Welcome to Javascript Racer!</h1>
+  
   <p>Gentlemen, start your engines!</p>
   <!-- Get player names -->
-  <form action='/create_players' method="POST">
-    <label> Player 1 <input type="text" name="player_1" ></label><br>
-    <label> Player 2 <input type="text" name="player_2" ></label><br>
+  <form id="create_players" action='/' method="POST">
+    <label> Racer 1 <input type="text" name="player_1" ></label><br>
+    <label> Racer 2 <input type="text" name="player_2" ></label><br>
     <input type="submit" value="Enter Names to Play!">
   </form>
   <br>
 
+  <!-- Add this div so everything isn't replaced-->
+  <div class="response">
+  </div>
+  <br>
+
+  <!-- Print winner of game -->
   <div id="win"></div>
+
+  <!-- If winner -->
+  <div class="winner">
+  </div>
+
+  <!-- Race tracks -->
 <table class="racer_table">
-  <tr id="player1_strip">
+  <tr id="player1_strip" data-winner_id="<%if @player_1 %><%=@player_1.id%><% end %>">  
     <td>Racer 1</td>
     <td class="active"></td>
     <td></td>
